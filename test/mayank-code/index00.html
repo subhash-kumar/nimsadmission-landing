@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIMS Life Section</title>
+
+  <!-- Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #faebd7;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nims-life-section {
+      text-align: center;
+      padding: 60px 15px;
+    }
+
+    .nims-life-section h2 {
+      font-weight: 600;
+      font-size: 28px;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .nims-life-section h2 span {
+      color: #c9302c;
+      font-weight: 700;
+    }
+
+    /* Flex layout container */
+    .nims-life-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    /* Individual card */
+    .nims-card {
+      position: relative;
+      flex: 1 1 calc(20% - 15px);
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      min-width: 180px;
+      background-color: #000;
+    }
+
+    .nims-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .nims-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .nims-card .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 0, 0, 0.85);
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+
+    .nims-card .play-btn i {
+      font-size: 26px;
+      color: #fff;
+      margin-left: 2px;
+    }
+
+    .nims-card:hover .play-btn {
+      background-color: rgba(255, 0, 0, 1);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .nims-card .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
+      padding: 15px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .nims-card h5 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .nims-card p {
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .nims-card {
+        flex: 1 1 calc(33.33% - 15px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nims-card {
+        flex: 1 1 calc(50% - 15px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nims-card {
+        flex: 1 1 100%;
+      }
+
+      .nims-life-section h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="nims-life-section">
+    <h2>
+      Live the <span>NIMS Life</span> — Inspiring,<br>
+      Vibrant, Unmatched.
+    </h2>
+
+    <div class="nims-life-wrapper">
+      <!-- Card 1 -->
+      <div class="nims-card">
+        <img src="https://i.ibb.co/6BmqmZP/lab.jpg" alt="Advanced Laboratories">
+        <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+        <div class="overlay">
+          <h5>Advanced Laboratories</h5>
+          <p>Our labs empower students across disciplines to explore, experiment, and innovate.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="nims-card">
+        <img src="https://i.ibb.co/5rW3Xpt/culture.jpg" alt="Celebrating Culture">
+        <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+        <div class="overlay">
+          <h5>Celebrating Culture</h5>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="nims-card">
+        <img src="https://i.ibb.co/Bq7KhMb/international.jpg" alt="International Collaboration">
+        <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+        <div class="overlay">
+          <h5>International Collaboration</h5>
+          <p>Collaborate with esteemed universities & institutions globally.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="nims-card">
+        <img src="https://i.ibb.co/QM7gSh4/classroom.jpg" alt="Life Beyond the Classroom">
+        <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+        <div class="overlay">
+          <h5>Life Beyond the Classroom</h5>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="nims-card">
+        <img src="https://i.ibb.co/s5YVqZH/campus-life.jpg" alt="Campus Life">
+        <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+        <div class="overlay">
+          <h5>Campus Life</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
