@@ -1128,8 +1128,9 @@
      width: 100%;
    }
 
+   .campuslife-ytslider-item img{width: 100%;}
    .campuslife-ytslider-text {
-     font-size: 12px;
+     font-size: 14px;
      text-align: left;
    }
  }
