@@ -1475,7 +1475,7 @@
    .campuslife-mergeimage1-bgimg4 {
      width: 100%;
      height: 550px;
-     background-image: url('../images/campus-life/section3-img4.webp');
+     background-image: url('');
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
@@ -1983,7 +1983,7 @@
             top: 0;
             bottom: 0;
             width: 100%;
-            background: url(../../images/2_enhanced.webp) right center no-repeat;
+            background: url() right center no-repeat;
             background-size: contain;
             filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.4));
 
@@ -2150,7 +2150,7 @@
             width: 100%;
             height: 150px;
             /* Adjust gradient for more accurate match */
-                background: url('../../images/about/overview/aboutbg2.webp') no-repeat bottom center;
+                background: url('') no-repeat bottom center;
                 background-size: cover;
             /* Tertiary purple to transparent primary red */
             z-index: 0;
