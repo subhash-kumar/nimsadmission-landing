@@ -358,7 +358,7 @@
    background: rgba(0, 0, 0, 0.4);
    color: #fff;
    padding: 10px 15px;
-   font-size: 14px;
+   font-size: 13px;
  }
 
  /* Custom Carousel Controls */
@@ -548,7 +548,7 @@
  }
 
  .program-section {
-   padding: 0px 0;
+   padding: 60px 0;
    text-align: center;
  }
 
@@ -1129,6 +1129,13 @@
    }
  }
 
+
+
+
+
+
+
+ 
  /* ---------------------- */
  /* MOBILE (<=576px)      */
  /* ---------------------- */
@@ -2768,7 +2775,7 @@
       .footer-address {
         text-align: center;
       }
-      .facebook-form{height: auto;}
+      .facebook-form{height: auto;width: 100%;}
     }
 
 
